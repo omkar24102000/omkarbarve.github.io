@@ -1,0 +1,322 @@
+
+@import 'utilities.css';
+:root{
+    --primary:#72b6e4;
+    --dark:#161616;
+    --pure:#fffffffd;
+    --ternary:#898989;
+    --light:#F2F2F2;
+    --secondary:#252424;
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  --webkit-font-smotthing:antialiased;
+}
+body{
+    height: 8000px;
+    font-family: sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    background: var(--dark);
+  
+}
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+ header nav .left a{
+     color: var(--light);
+     text-decoration: none;
+     margin-right: 5rem;
+     text-transform: uppercase;
+     transition: all .3s ease;
+ }
+ header nav .left a:hover{
+     color: var(--primary);
+ }
+
+ header nav{
+     padding: 2rem 0;
+ }
+
+ header nav .branding{
+     margin-right: 3rem;
+ }
+.hero{
+    background-color: #161616;
+    max-width: 1152px;
+    max-height: 1152px;
+    padding: 0 15px;
+    
+    
+}
+
+.hero{
+    padding: 3rem;
+
+}
+.hero .left img{
+    width: 350px;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.hero .right{
+    color: #fffffffd;
+    margin-left: 50px;
+    margin-top: 40px;
+    
+}
+.hero .right h1{
+    font-size: 1.4cm;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+.hero .right h6{
+    font-size: 0.7cm;
+    margin-bottom: 1.5rem;
+    color: var(--primary);
+    
+}
+.hero .right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+    
+}
+ section{
+     padding: 6rem 0;
+ }
+ section.about .right h1{
+     margin-bottom: 2rem;
+     font-size: 4rem;
+     font-weight: 400;
+ }
+ section.about .right h1 span{
+     color: var(--primary);
+     margin-left: 200px;
+ }
+ 
+section.about .right h4{
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+section.about .right h2{
+    font-size: 1.5rem;
+    display: list-item;
+    list-style-type: disc;
+  
+
+}
+.section-heading{
+    color:var(--dark);
+    text-align:center;
+    margin-bottom: 8rem;
+    
+    line-height: 0.5;
+    font-size: 2rem;
+    
+}
+section.services {
+    background-color: #f0ecec;
+}
+section.services .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 6rem;
+
+}
+section.services .card-wrapper .card img{
+    position: absolute;
+    top: -3.5rem;
+    left: 50%;
+    transform: translatex(-50%);
+    max-width: 150px;
+    max-height: 130px;
+    
+}
+section.services .card-wrapper .card{
+    background: #fffffffd;
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 5.5rem;
+    text-align: center;
+    transition: all .3s ease;
+}
+section.services .card-wrapper .card h2{
+    font-weight: 400;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    padding-top:  -1rem;
+}
+section.services .card-wrapper .card p{
+    font-family: 'Lato', sans-serif;
+    color:var(--ternary);
+    line-height: 1.6;
+
+}
+section.services .card-wrapper .card:hover{
+    background: var(--dark);
+}
+section.services .card-wrapper .card:hover h2, section.services .card-wrapper .card:hover p{
+    color: var(--pure);
+
+}
+section.freelancer{
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/background.png);
+    color: var(--light);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 80%, 0 100%);
+    padding-bottom: 12rem;
+}
+section.freelancer h1{
+    color: #f0ecec;
+    padding-bottom: 0.7rem;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: 'Lato', sans-serif;
+
+}
+section.freelancer p{
+    color: #f0ecec;
+    padding-bottom:3rem;
+    
+}
+
+section.work{
+    background-color: rgb(242, 255, 255);
+    padding-top: 8rem;
+   
+
+}
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.card1{
+    height: 450px;
+    width: 380px;
+    margin-bottom: -15rem;
+}
+section.work .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem;
+    padding-top:  2rem;
+    margin-left: 3rem;
+    margin-top: -9rem;
+    
+   
+}
+section.work .card-wrapper .card1{
+    position: relative;
+}
+
+section.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 3rem;
+}
+section.contact .card-wrapper .card{
+    text-align: center;
+}
+section.contact .card-wrapper .card img.details{
+width: 150px;
+height: 100px;
+margin-bottom: 2rem;
+}
+section.contact .card-wrapper .card h2{
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 1rem;
+}
+section.contact .card-wrapper .card h6{
+    font-size: 1rem;
+    color: var(--ternary);
+    font-weight: 400;
+    margin-bottom: 4rem;
+    
+}
+
+section.contact .container .section-heading-one{
+    color:var(--dark);
+    text-align:center;
+    margin-bottom: 8rem;
+    
+    line-height: 0.5;
+    font-size: 2rem;
+    
+}
+section.contact .container .section-heading-one span{
+    color: var(--primary);
+}
+section.contact .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+section.contact .input-wrap-2{
+    display: flex;
+    flex-direction: column;
+}
+section.contact input{
+    padding: 0.5rem;
+    border: 1px solid #dbd9d9;
+    font-size: 0.9rem;
+}
+section.contact .input-wrap-2 input{
+margin-bottom: 2rem;
+font-size: 0.9rem;
+
+}
+section.contact .input-wrap-2 textarea{
+    padding: 00.5rem;
+   border: 1px solid #dbd9d9;
+   font-size: 0.9rem;
+    
+}
+section.contact .input-wrap-2 textarea:focus, section.contact input:focus{
+    outline: none;
+}
+section.contact .btn-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+form button{
+    padding: 0.8rem 3rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    margin-left: 29rem;
+    margin-top: 2rem;
+    text-transform: uppercase;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition:all .3s ease;
+    -o-transition: all .3s ease;
+    background: var(--primary);
+    color: var(--seconadry);
+    
+}
+form button:hover{
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+}

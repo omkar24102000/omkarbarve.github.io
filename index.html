@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA_Compatible" content="ie=edge">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <script type="text/javascript" src="js/smtp.js"></script>
+        <script>
+
+
+        function sendEmail() {
+              
+            var user_name = document.getElementById("name_input").value;
+            var user_message = document.getElementById("message_input").value;
+            var user_email = document.getElementById("email_input").value;
+
+            Email.send({
+            Host: "smtp.gmail.com",
+            Username : "omkarbarave0101@gmail.com",
+            Password : "omkar2410",
+            To : 'omkarbarave0101@gmail.com',
+            From :  "omkarbarave0101@gmail.com",
+            Subject : "Email From: "+ user_name,
+            Body : user_message+ " + User EMAIL ID: "+ user_email,
+            }).then(
+              alert("mail sent successfully")
+            );
+        }
+
+        </script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+            <nav class="flex items-center justify-between">
+                <div class="left flex  items-center">
+                    
+                    <div>
+                        <a href="#">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#project">Project</a>
+                        
+                    </div>
+                </div>
+                <div class="right">
+                    <a href="#container"><button class="btn btn-primary">Contact</button></a>
+                </div>
+            </nav>               
+             <div class="hero flex items-center justify-between">
+               <div class="left flex-1  flex justify-center">
+                   <img src="./images/omkarpro.jpg" alt="">
+               </div>
+               <div class="right flex-1">
+                   <h1>I'm , Omkar Barve</h1>
+                   <h6>SOFTWARE DEVLOPER</h6>
+                   <p> I am a software developer in many different front end and back end languages, responsive frameworks, databases, and best code practices. 
+                       My objective is simply to be the best software developer that I can be and to contribute to the technology industry all that I know and can do. 
+
+                   </p>
+                   <div>
+                      <button class="btn btn-secondary">DOWNLOAD CV</button>
+                   </div>
+
+               </div>
+           </div>   
+        </div>
+
+        </header>
+
+        <section id="about" class="about">
+            <div class="container flex items-center">
+                <div class="left flex-1">
+                    <p>     </p>
+                </div>
+                <div class="right flex-1">
+
+                    <h1>Education <span>History</span></h1>
+                    <div class="first">
+                    <h2>Bachelor of Engineering in Computer Engineering</h2>
+                    <h4>2019-2022  SharadChandra Pawar College of Eng</h4>
+                    <br></br>
+                    </div>
+                    <div class="second">
+                        <h2>Diploma in Computer Engineering</h2>
+                        <h4>2016-2019  Vidyalankar Polytech</h4>
+                    </div>
+                    <br></br>
+                    <div class="Third">
+                        <h2>SSC From </h2>
+                        <h4>2016 batch passed </h4>
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="services">
+            <div class="container">
+                <h1 class="section-heading"> Skills</h1>
+
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img src="./images/java1.svg">
+                        <h2>Java</h2>
+                        <p>Designs, Develops, and Manages Java-based applications and software. </p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/python.svg" alt="">
+                        <h2>python</h2>
+                        <p>specialize in writing server-side web application logic. </p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/cpp.svg" alt="">
+                        <h2>C</h2>
+                        <p>developing the code that integrates into base operating systems. </p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/html.svg" alt="">
+                        <h2>Html/Css</h2>
+                        <p>develop web applications, code sites, and provide support to website users. </p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/sql.svg" alt="">
+                        <h2>Sql</h2>
+                        <p>manage and update databases using tools or programming languages. </p>
+                    </div>
+
+                    <div class="card">
+                        <img src="./images/golang.svg" alt="">
+                        <h2>Go lang</h2>
+                        <p>Design and implement software which is to be written in the Go. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="freelancer">
+            <h1> I Am Available For Work </h1>
+            <p>Producing clean, efficient code based on specifications</p>
+            <button class="btn btn-primary">Download CV </button>
+
+        </section>
+        <section id="project" class="work">
+            <div class="Project">
+                <h1 class="section-heading"><span>My</span>Project</h1>
+                <div class="card-wrapper">
+                    <div class="card1">
+                        <img src="./images/ph1.png">
+                    </div>
+                    <div class="card1">
+                        <img src="./images/ph2.png">
+                    </div>
+                    <div class="card1">
+                        <img src="./images/ph3.png">
+                    </div>
+                    <div class="card1">
+                        <img src="./images/phh4.png">
+                    </div>
+                    <div class="card1">
+                        <img src="./images/ph5.png">
+                    </div>
+                                  
+                </div>
+            </div>
+
+        </section>
+        <section id = "container" class="contact">
+            <div class="container">
+                <h1 class="section-heading-one">Contact<span>Us</span></h1>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img class="details"  src="./images/mobile.svg" alt="">
+                        <h2>Call Us On</h2>
+                        <h6>9136205275</h6>
+                    </div>
+                    
+                    <div class="card">
+                        <img  class="details" src="./images/mail.svg" alt="">
+                        <h2>Email Us At</h2>
+                        <h6>omkarbarve2000@gmail.com</h6>
+                    </div>
+
+                    <div class="card">
+                        <img  class="details" src="./images/map1.svg" alt="">
+                        <h2>My Location</h2>
+                        <h6>Ghodapdeo, D.P Wadi , Mumbai 400033</h6>
+                    </div>
+                </div>
+                <div>
+                   <input id="name_input" type="text" name="name" placeholder="Name">
+                   <input id="message_input" type="text" name="message" placeholder="Message">
+                   <input id="email_input"type="email" name="email"  placeholder="Your email">
+                   <button id="submit_btn" type="submit" onclick="sendEmail()" >Send</button>
+                </div>
+    </body>
+</html>
